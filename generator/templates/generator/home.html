@@ -1,0 +1,33 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<div class = 'container text-center'>
+<h1>Password Generator</h1>
+
+<form action="password">
+    <select name="length">
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12" selected="selected">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+    </select>
+
+    <br>
+    <input type="checkbox" name="uppercase">Upper Case
+    <br>
+    <input type="checkbox" name="lowercase">Lower Case
+    <br>
+    <input type="checkbox" name="special">Special Characters
+    <br>
+    <br>
+    <input type="submit" value="Generate Password" class="btn btn-primary">
+    <br>
+    <br>
+    <a class="btn btn-warning" href={% url 'about' %}>Learn More about this website</a>
+</form>
+
+</div>
